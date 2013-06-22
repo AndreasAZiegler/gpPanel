@@ -103,6 +103,8 @@ double mpWindow::zoomIncrementalFactor = 1.5;
 #define MP_POPMENU_HELP_INFO            _("Tietoa hiirilekomennoista")
 #endif
 
+// moved from "mathplot.h"
+WX_DEFINE_LIST(PointList);
 //-----------------------------------------------------------------------------
 // mpLayer
 //-----------------------------------------------------------------------------
