@@ -47,7 +47,7 @@ ENDIF(wxWidgets_FOUND)
 
 ############################################################
 ## libgpPanel
-add_subdirectory(gpPanel)
+add_subdirectory(src)
 
 ############################################################
 ## install: headers

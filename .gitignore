@@ -1,6 +1,6 @@
 lib/
-/build/obj
-/build/gpPanel.layout
+build/
+tmp/
 
 # cmake temporary files
 CMakeCache.txt
