@@ -1774,7 +1774,21 @@ public:
         Both vectors MUST be of the same length. This method DOES NOT refresh the mpWindow, do it manually.
       * @sa Clear
     */
-    void SetData( const std::vector<double> &xs,const std::vector<double> &ys);
+    void SetData(const std::deque<double> &xs, const std::deque<double> &ys);
+
+    /**
+     * @brief Adds a new data x-point to the x-vector.
+     * @param x X value
+     * @param xs Reference to the vector containing the x values.
+     */
+    void AddXData(double x, std::deque<double> &xs);
+
+    /**
+     * @brief Adds a new data y-point to the y-vector.
+     * @param y Y value
+     * @param ys Reference to the vector containing the y values.
+     */
+    void AddYData(double y, std::deque<double> &ys);
 
     /** Clears all the data, leaving the layer empty.
       * @sa SetData
@@ -1784,7 +1798,7 @@ public:
 protected:
     /** The internal copy of the set of data to draw.
       */
-    std::vector<double>  m_xs,m_ys;
+    std::deque<double>  m_xs,m_ys;
 
     /** The internal counter for the "GetNextXY" interface
       */
